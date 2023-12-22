@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Modernism';
+  src: url(fonts/Modernism.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Modernism Narrow';
+  src: url(fonts/Modernism-Narrow.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Modern Sans Light';
+  src: url(fonts/ModernSans-Light.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Modern Age';
+  src: url(fonts/Modern\ Age.ttf) format('truetype');
+}
+
+
+/*styles for laptop size screens 13inch-17inch*/
+body {
+    font-family: "Modern Age";
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0; /* Remove default margin */  
+    width: 100%;
+    height: 100px;
+    background: c0c0c0;
+  }
+
+  .top-container{
+    height: 560px;
+  }
+
+  
+  .textstandard {
+    margin: 5px 0;
+  }
+
+  .intro {
+    text-align: center;
+    padding-bottom: 10px; /* Add a large bottom padding to create a gap */
+    padding-top: 300px;
+    color: #212429;
+  }
+
+  .text-align{
+    letter-spacing: 2px;
+  }
+
+  h1.textstandard {
+    text-align: center;
+    font-size: 4em; /* Make the h1 big */
+  }
+
+  /* Styling for Sectors */
+  .sectors {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap between blocks */
+    margin-top: 80px; /* Add space between the intro and sectors */
+  }
+
+  .sector-block {
+    height: 520px; /* Set a fixed height for a more banner-like appearance */
+    width: 25%; /* Adjusted width for the sector blocks */
+    background-color: darkgrey;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0; /* Remove border-radius for straight edges */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  #sector1.sector-block:hover {
+    transform: translateY(-10px);  /* Apply a slight translation upwards on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px blueviolet; /* Add a shadow on hover */
+    background-color: blueviolet; /* Change the background color on hover */
+  }
+
+  #sector2.sector-block:hover {
+    transform: translateY(-10px);  /* Apply a slight translation upwards on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px orangered; /* Add a shadow on hover */
+    background-color: orangered; /* Change the background color on hover */
+  }
+
+  #sector3.sector-block:hover {
+    transform: translateY(-10px);  /* Apply a slight translation upwards on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px darkgreen; /* Add a shadow on hover */
+    background-color: darkgreen; /* Change the background color on hover */
+  }
+
+
+
+  .sector-block:nth-child(1),
+  .sector-block:nth-child(3) {
+    margin: 0 100px; /* Reduce the margin for the outer blocks */
+  }
+
+  .sector-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .sector-block-text {
+    margin-top: 10%; /* Adjust the space between image and text */
+    font-size: small;
+    font-family: Modernism Narrow;
+  }
+
+  .sector-block:nth-child(3) { 
+    background: url('https://images.unsplash.com/photo-1615421533158-f6c874badff4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+  }
+
+  .sector-block:nth-child(2) {
+    background: url('https://images.unsplash.com/photo-1615150044410-3d9bb804959e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+  }
+
+  .sector-block:nth-child(1) {
+    background: url('https://images.unsplash.com/photo-1616067086625-f57bd026fbd1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+  }
+
+  h3.textstandard {
+    text-align: center;
+    margin-top: 200px; /* Add more space between sectors and other content */
+    color: rgb(255, 255, 255);
+  }
+
+  .container{
+    background-color:#212429;
+    line-height: 80px;
+    height: 850px;
+    margin-top: 0px;
+  }
+
+   .para-spacing-intro{
+    font-family: Modern Sans Light;
+    color: white;
+    letter-spacing: 1px;
+    line-height: normal;
+    margin-top: 5px;
+    text-align: center;
+   }
+
+   .information-tab{
+    background-color: #212429;
+    color: white;
+    margin-top: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 2px;
+    font-family: Modern Sans Light;
+    font-size: 20px;
+   }
+
+   .page-container {
+    position: relative;
+    height: 93vh;
+}
+
+.img-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    align-items: center;
+    height: 120px; /* Adjust the height as needed */
+}
+
+.img-container img {
+    width: 20px; /* Adjust the width as needed */
+    height: 100%; /* Maintain the aspect ratio */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.hover-effect:hover {
+  transform: translateY(5px); /* Adjust the distance the element raises up */
+}
+
+/* Media query for monitors */
+@media (min-width: 1800px){
+  body {
+    font-family: "Modern Age";
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0; /* Remove default margin */  
+    width: 100%;
+    height: 100px;
+    background: c0c0c0;
+  }
+
+  
+  .textstandard {
+    margin: 5px 0;
+  }
+
+  .intro {
+    text-align: center;
+    padding-bottom: 220px; /* Add a large bottom padding to create a gap */
+    padding-top: 370px;
+  }
+
+  h1.textstandard {
+    text-align: center;
+    font-size: 4em; /* Make the h1 big */
+  }
+
+  .top-container{
+    height: 760px;
+  }
+
+  .container{
+    background-color:#212429;
+    line-height: 80px;
+    height: 950px;
+    margin-top: 200px;
+  }
+
+  .sector-block {
+    height: 600px; /* Set a fixed height for a more banner-like appearance */
+    width: 23%; /* Adjusted width for the sector blocks */
+    background-color: darkgrey;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0; /* Remove border-radius for straight edges */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .sector-block {
+    margin: 0 3px; /* Adjust the margin for larger screens */
+  }
+
+  .sector-block:nth-child(1),
+  .sector-block:nth-child(3) {
+    margin: 0 50px; /* Reduce the margin for the outer blocks */
+  }
+
+  .sector-block-text {
+    margin-top: 10%; /* Adjust the margin for larger screens */
+  }
+}

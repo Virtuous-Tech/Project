@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Virtuous</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}"> <!-- Link to your CSS file -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="static/images/favicon-16x16.png">
+</head>
+
+
+<body>
+  <div class="top-container">
+    <div class="intro">
+        <h1 class="textstandard"> Virtuous Technology </h1>
+        <h2 style="font-family: Modern Sans Light;" class="text-align"> Research and Technological Company </h2>
+    </div>
+
+    <div class="page-container img-container hover-effect">
+      <a href="#sectors">
+        <img src="{{ url_for('static', filename='images/caret-down-fill.svg') }}" alt="SVG Image">
+      </a>
+    </div>
+  </div>
+
+    <div class="container" id="sectors">
+      <h3 class="textstandard">Sectors</h3>
+      <p class="para-spacing-intro">Virtuous Overshadows Other Areas of Design Engineering and Education, with Departments that Teach, Produce, and Innovate</p>      
+      
+      <div class="sectors">
+        <div class="sector-block" onclick="location.href='{{ url_for('VirtuousEducation') }}';" style="cursor: pointer;" id="sector1">
+          <div class="sector-block-text" style="color: blueviolet;"> <h2>Education</h2> </div>
+        </div>
+        
+        <div class="sector-block" onclick="location.href='{{ url_for('VirtuousFinance') }}';" style="cursor: pointer;" id="sector2">
+          <div class="sector-block-text" style="color: orangered;"> <h2>Finance</h2> </div>
+        </div>
+  
+        <div class="sector-block" onclick="location.href='{{ url_for('ComingSoon') }}';" style="cursor: pointer;" id="sector3">
+          <div class="sector-block-text" style="color: green;"> <h2>Coming Soon</h2> </div>
+        </div>
+      </div>
+      
+      <div class="information-tab">
+        <p>virtuous.xyz@gmail.com</p>
+      </div>
+    </div>
+</body>
+
+
+</html>

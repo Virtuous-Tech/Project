@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Modernism';
+    src: url(fonts/Modernism.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modernism Narrow';
+    src: url(fonts/Modernism-Narrow.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modern Sans Light';
+    src: url(fonts/ModernSans-Light.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modern Age';
+    src: url(fonts/Modern\ Age.ttf) format('truetype');
+  }
+
+/*
+  .background{
+    background-color: #212429;
+  }
+
+  .title{
+    font-family: Modern Age;
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.title a:visited {
+    color: inherit;
+  }
+
+.heading-center{
+  color: whitesmoke;
+  font-family: Modernism Narrow;
+  letter-spacing: 2px;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: Modern Sans Light;
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.container div {
+  margin-right: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Media query for monitors */
+/*
+
+@media (min-width: 1800px){
+  .heading-center{
+    color: whitesmoke;
+    font-family: Modernism Narrow;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 260px;
+    line-height: 100px;
+  }
+
+  .container {
+  display: flex;
+  justify-content: center;
+  font-family: Modern Sans Light;
+  font-size: 20px;
+  }
+}
+
+/*
+@media screen and (max-width: 950px) {
+  .heading-center{
+    color: whitesmoke;
+    font-family: Modernism Narrow;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 270px;
+    line-height: 50px;
+  }
+
+  .container {
+  display: flex;
+  justify-content: center;
+  font-family: Modern Sans Light;
+  font-size: 20px;
+  }
+}
+*/
+
+.coming-soon{
+  font-family: Modernism Narrow;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: blueviolet;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 25px;
+}
+
+.title{
+  font-family: Modern Age;
+  margin-top: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.title a:visited {
+  color: inherit;
+}
+
+.glowing-text {
+  text-shadow: 0 0 3px blueviolet;
+}
+
+/* Media query for monitors */
+@media (min-width: 1800px){
+  .coming-soon{
+    margin-top: 300px;
+  }
+}

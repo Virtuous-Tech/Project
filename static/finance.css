@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Modernism';
+    src: url(fonts/Modernism.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modernism Narrow';
+    src: url(fonts/Modernism-Narrow.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modern Sans Light';
+    src: url(fonts/ModernSans-Light.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modern Age';
+    src: url(fonts/Modern\ Age.ttf) format('truetype');
+  }
+
+  .background{
+    background-color: #212429;
+  }
+
+  .title{
+    font-family: Modern Age;
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.title a:visited {
+    color: inherit;
+  }
+    
+  .h1{
+    font-family: Modernism Narrow;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 225px;
+    color: whitesmoke;
+  }
+
+  .highlight {
+    color: orangered; /* Set the desired color for the highlighted word */
+  }
+
+  .glowing-text {
+    text-shadow: 0 0 5px rgba(255, 69, 0, 0.6);
+  }
+
+      /* Media query for monitors */
+@media (min-width: 1800px){
+  .h1{
+    font-family: Modernism Narrow;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 300px;
+    color: whitesmoke;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .h1{
+    font-family: Modernism Narrow;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 310px;
+    color: whitesmoke;
+  }
+}

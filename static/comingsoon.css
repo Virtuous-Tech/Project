@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Modernism';
+    src: url(fonts/Modernism.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modernism Narrow';
+    src: url(fonts/Modernism-Narrow.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modern Sans Light';
+    src: url(fonts/ModernSans-Light.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Modern Age';
+    src: url(fonts/Modern\ Age.ttf) format('truetype');
+  }
+
+    .title{
+        font-family: Modern Age;
+        margin-top: 50px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-decoration: none;
+        color: #212429;
+    }
+
+    .title a:visited {
+      color: inherit;
+    }
+
+    .body {
+        text-align: center;
+        margin-top: 85px;
+      }
+
+    .subheadings-link {
+      text-align: center;
+      cursor: pointer;
+      font-size: 30px;
+      text-decoration: none;
+      color: #212429;
+      font-weight: bold;
+    }
+
+    .subheadings-link a:visited{
+      color: #212429;
+    }
+
+    .h1{
+      font-family: Modernism Narrow;
+      letter-spacing: 2px;
+      color: #212429;
+    }
+
+    .h2{
+      font-family: Modern Sans Light;
+      font-size: 20px;
+      margin-top: 1%;
+      margin-bottom: 2%;
+      color: #212429;
+    }
+
+    .highlight{
+      color: #212429;(0, 0, 0); /* Set the desired color for the highlighted word */
+    }
+
+    .glowing-text{
+      text-shadow: 0 0 1px #212429(255, 255, 255, 0.6);
+    }
+
+    .highlight-education{
+      color: blueviolet; /* Set the desired color for the highlighted word */
+    }
+
+    .glowing-text-education {
+      text-shadow: 0 0 1px rgba(138, 43, 226, 0.6);
+    }
+
+    
+    .highlight-finance{
+      color: orangered; /* Set the desired color for the highlighted word */
+    }
+
+    .glowing-text-finance {
+      text-shadow: 0 0 1px rgba(255, 69, 0, 0.6);
+    }
+
+
+    /* Media query for monitors */
+@media (min-width: 1800px){
+  .body {
+    text-align: center;
+    margin-top: 185px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .body {
+    text-align: center;
+    margin-top: 210px;
+  }
+}
