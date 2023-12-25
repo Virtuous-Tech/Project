@@ -22,14 +22,5 @@ def ComingSoon():
 def Python():
     return render_template("Python.html")
 
-@app.route("/HTMLCSS")
-def HTMLCSS():
-    return render_template("HTMLCSS.html")
-
-@app.route("/Applications")
-def Applications():
-    return render_template("Applications.html")
-
-    
 if __name__ == "__main__":
     app.run(debug=True)
