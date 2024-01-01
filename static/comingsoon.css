@@ -22,6 +22,8 @@
         font-family: Modern Age;
         margin-top: 50px;
         text-align: center;
+        position: relative;
+      z-index: 2; /* Set a higher z-index for the header and makes sure that this element appears over the vh of the other div*/
         cursor: pointer;
         font-size: 40px;
         letter-spacing: 4px;
@@ -34,12 +36,19 @@
     }
 
     .body {
-        text-align: center;
-        margin-top: 85px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Add this line to center items horizontally */
+      text-align: center;  /* Add this line to center text within each item */
+      position: fixed; /* ensures that vh isnt affected by the div above it and begins at the top of the screen, not the bottom of the div above it*/
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
       }
 
     .subheadings-link {
-      text-align: center;
       cursor: pointer;
       font-size: 30px;
       text-decoration: none;
@@ -60,8 +69,6 @@
     .h2{
       font-family: Modern Sans Light;
       font-size: 20px;
-      margin-top: 1%;
-      margin-bottom: 2%;
       color: #212429;
     }
 
@@ -89,19 +96,3 @@
     .glowing-text-finance {
       text-shadow: 0 0 1px rgba(255, 69, 0, 0.6);
     }
-
-
-    /* Media query for monitors */
-@media (min-width: 1800px){
-  .body {
-    text-align: center;
-    margin-top: 185px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .body {
-    text-align: center;
-    margin-top: 210px;
-  }
-}
