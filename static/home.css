@@ -264,7 +264,7 @@ font-size: 70px;
 .description1{
 color: #FFF;
 text-shadow: 0 0 5px rgb(255, 255, 255);
-font-family: "Modern Sans";
+font-family: "Modern Sans Light";
 font-size: 29px;
 font-style: normal;
 font-weight: 500;
@@ -335,8 +335,8 @@ line-height: normal;
 }
 
 .finance, .machine{
-color: #823D34;
-text-shadow: 0 0 7px #823D34;
+color: #b64334;
+text-shadow: 0 0 7px #b64334;
 font-family: "Modern Age";
 font-style: normal;
 font-weight: 400;
