@@ -19,7 +19,7 @@
   }
 
   .background{
-    background-color: #212429;
+    background-color: black;
   }
 
   .title{
@@ -55,13 +55,7 @@
     font-family: Modernism Narrow;
     letter-spacing: 5px;
     font-size: 50px;
-    color: whitesmoke;
+    color: orangered;
   }
 
-  .highlight {
-    color: orangered; /* Set the desired color for the highlighted word */
-  }
 
-  .glowing-text {
-    text-shadow: 0 0 5px rgba(255, 69, 0, 0.6);
-  }

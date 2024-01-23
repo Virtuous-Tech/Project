@@ -28,7 +28,7 @@
         font-size: 40px;
         letter-spacing: 4px;
         text-decoration: none;
-        color: #212429;
+        color: whitesmoke;
     }
 
     .title a:visited {
@@ -52,32 +52,32 @@
       cursor: pointer;
       font-size: 30px;
       text-decoration: none;
-      color: #212429;
+      color: whitesmoke;
       font-weight: bold;
     }
 
     .subheadings-link a:visited{
-      color: #212429;
+      color: whitesmoke;
     }
 
     .h1{
       font-family: Modernism Narrow;
       letter-spacing: 2px;
-      color: #212429;
+      color: whitesmoke;
     }
 
     .h2{
       font-family: Modern Sans Light;
       font-size: 20px;
-      color: #212429;
+      color: whitesmoke;
     }
 
     .highlight{
-      color: #212429;(0, 0, 0); /* Set the desired color for the highlighted word */
+      color: whitesmoke;(0, 0, 0); /* Set the desired color for the highlighted word */
     }
 
     .glowing-text{
-      text-shadow: 0 0 1px #212429(255, 255, 255, 0.6);
+      text-shadow: 0 0 1px whitesmoke(255, 255, 255, 0.6);
     }
 
     .highlight-education{

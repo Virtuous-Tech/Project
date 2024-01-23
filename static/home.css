@@ -1,11 +1,6 @@
 @font-face {
-  font-family: 'Modernism';
-  src: url(fonts/Modernism.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Modernism Narrow';
-  src: url(fonts/Modernism-Narrow.ttf) format('truetype');
+  font-family: 'Modern Age';
+  src: url(fonts/Modern\ Age.ttf) format('truetype');
 }
 
 @font-face {
@@ -14,255 +9,457 @@
 }
 
 @font-face {
-  font-family: 'Modern Age';
-  src: url(fonts/Modern\ Age.ttf) format('truetype');
+  font-family: 'Modernism Narrow';
+  src: url(fonts/Modernism-Narrow.ttf) format('truetype');
 }
 
-
-/*styles for laptop size screens 13inch-17inch*/
 body {
-    font-family: "Modern Age";
-    letter-spacing: 10px;
-    padding: 0;
-    margin: 0; /* Remove default margin */  
-    width: 100%;
-    height: 100px;
-    background: c0c0c0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  background-color: black;
+}
+
+::selection {
+  background-color: blueviolet; /* Set your desired highlight color */
+}
+  .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box; /* Include padding in the total height */
+}
+
+.menu-item {
+  margin: 0 85px;
+  font-family: Modern Age;
+  color: #FFF;
+  text-decoration: none; /* Remove the underline */
+  transition: blueviolet 0.001s; /* Add a smooth color transition on hover or click */
+}
+
+.menu-item:hover,
+.menu-item:active {
+  color: blueviolet; /* Change the color when hovered or clicked */
+    }
+
+.title-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-grow: 1;
+}
+
+#logo path:nth-child(1){
+  stroke-dasharray: 201.92945861816406px;
+  stroke-dashoffset: 201.92945861816406px;
+  animation: line-anim 2s ease forwards 1.7s;
+}
+
+#logo path:nth-child(2){
+  stroke-dasharray: 344.92572021484375px;
+  stroke-dashoffset: 344.92572021484375px;
+  animation: line-anim 2s ease forwards 1.6s;
+}
+
+#logo path:nth-child(3){
+  stroke-dasharray: 302.948974609375px;
+  stroke-dashoffset: 302.948974609375px;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+#logo path:nth-child(4){
+  stroke-dasharray: 178.25px;
+  stroke-dashoffset: 178.25px;
+  animation: line-anim 2s ease forwards 1.4s;
+}
+
+#logo path:nth-child(5){
+  stroke-dasharray: 302.94879150390625px;
+  stroke-dashoffset: 302.94879150390625px;
+  animation: line-anim 2s ease forwards 1.3s;
+}
+
+#logo path:nth-child(6){
+  stroke-dasharray: 306.0728454589844px;
+  stroke-dashoffset: 306.0728454589844px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(7){
+  stroke-dasharray: 283.25px;
+  stroke-dashoffset: 283.25px;
+  animation: line-anim 2s ease forwards 1.1s;
+}
+
+#logo path:nth-child(8){
+  stroke-dasharray: 256.7900695800781px;
+  stroke-dashoffset: 256.7900695800781px;
+  animation: line-anim 2s ease forwards 1s;
+}
+
+#logo path:nth-child(9){
+  stroke-dasharray: 272.385986328125px;
+  stroke-dashoffset: 272.385986328125px;
+  animation: line-anim 2s ease forwards .9s;
+}
+
+#logo path:nth-child(10){
+  stroke-dasharray: 187px;
+  stroke-dashoffset: 187px;
+  animation: line-anim 2s ease forwards .8s;
+}
+
+#logo path:nth-child(11){
+  stroke-dasharray: 241.79779052734375px;
+  stroke-dashoffset: 241.79779052734375px;
+  animation: line-anim 2s ease forwards .7s;
+}
+
+#logo path:nth-child(12){
+  stroke-dasharray: 265.9310302734375px;
+  stroke-dashoffset: 265.9310302734375px;
+  animation: line-anim 2s ease forwards .6s;
+}
+
+#logo path:nth-child(13){
+  stroke-dasharray: 302.948486328125px;
+  stroke-dashoffset: 302.948486328125px;
+  animation: line-anim 2s ease forwards .5s;
+}
+
+#logo path:nth-child(14){
+  stroke-dasharray: 265.9310302734375px;
+  stroke-dashoffset: 265.9310302734375px;
+  animation: line-anim 2s ease forwards .4s;
+}
+
+#logo path:nth-child(15){
+  stroke-dasharray: 186.99998474121094px;
+  stroke-dashoffset: 186.99998474121094px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(16){
+  stroke-dasharray: 301.9758605957031px;
+  stroke-dashoffset: 301.9758605957031px;
+  animation: line-anim 2s ease forwards 0.2s;
+}
+
+#logo path:nth-child(17){
+  stroke-dasharray: 134.5px;
+  stroke-dashoffset: 134.5px;
+  animation: line-anim 2s ease forwards 0.1s;
+}
+
+#logo path:nth-child(18){
+  stroke-dasharray: 237.40438842773438px;
+  stroke-dashoffset: 237.40438842773438px;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+.menu-item {
+    margin: 0 10px; /* Adjust margin for smaller screens */
+}
+
+.title {
+    font-size: 40px; /* Adjust font size for smaller screens */
+}
+}
+
+@media screen and (max-width: 600px) {
+.menu-item {
+    margin: 0 5px; /* Adjust margin for smaller screens */
+}
+
+.title {
+    font-size: 30px; /* Adjust font size for smaller screens */
+}
+}
+
+
+ h1{
+  animation: fadeAndSlide linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+ }
+
+ @keyframes fadeAndSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-30px); /* Initial position off to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Final position, centered */
+  }
+}
+
+
+.second-page .background {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url('/static/images/landingpage.jpg'); /* Adjust the path as needed */
+background-size: 2788px 2194px;
+background-repeat: no-repeat;
+filter: brightness(25%);
+z-index: -1;
+}
+
+.second-page {
+position: relative;
+display: flex;
+flex-direction: column;
+height: 100vh;
+padding-left: 165px;
+align-items: left; /* Center text vertically */
+justify-content: center;
+}
+
+
+.education, .curriculum {
+color: #C9B8F7;
+text-shadow: 0 0 7px #c9b8f7;
+font-family: "Modern Age";
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0; /* Remove default margin */
+}
+
+.education{
+font-size: 15px;
+}
+
+.curriculum {
+font-size: 70px;
+}
+
+.description1{
+color: #FFF;
+text-shadow: 0 0 5px rgb(255, 255, 255);
+font-family: "Modern Sans";
+font-size: 29px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+@media screen and (max-width: 1000px) {
+.second-page{
+  padding-left: 75px;
+}
+
+.education {
+  font-size: 10px; /* Adjust for smaller screens */
+}
+
+.curriculum {
+  font-size: 50px; /* Adjust for smaller screens */
+}
+
+.description1{
+  font-size: 19px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.second-page{
+  padding-left: 50px;
+}
+
+.education {
+  font-size: 10px; /* Adjust for smaller screens */
+}
+
+.curriculum {
+  font-size: 30px; /* Adjust for smaller screens */
+}
+
+.description1{
+  font-size: 15px;
+}
+}
+
+
+
+
+.third-page .background1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/static/images/openpage.jpg'); /* Adjust the path as needed */
+  background-size: 1906px 3000px;
+  background-repeat: no-repeat;
+  filter: brightness(25%);
+  z-index: -1;
   }
 
-  .top-container{
-    height: 560px;
+.third-page{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 800px;
+  align-items: left; /* Center text to one side */
+  justify-content: center;
+}
+
+.finance, .machine{
+color: #823D34;
+text-shadow: 0 0 7px #823D34;
+font-family: "Modern Age";
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0; /* Remove default margin */
+}
+
+.finance{
+font-size: 15px;
+}
+
+.machine{
+font-size: 70px;
+}
+
+@media screen and (max-width: 1510px) {
+.finance{
+  font-size: 10px;
+}
+.machine{
+  font-size: 60px;
+}
+.description1{
+  font-size: 20px;
+}
+
+.third-page{
+  padding-left: 700px;
+}
+}
+
+@media screen and (max-width: 1310px) {
+  .third-page{
+    padding-left: 400px;
   }
 
+  .machine{
+    font-size: 50px;
+  }
+  }
+
+@media screen and (max-width: 910px) {
+  .finance{
+    font-size: 10px;
+  }
+  .machine{
+    font-size: 50px;
+  }
+  .description1{
+    font-size: 17px;
+  }
   
-  .textstandard {
-    margin: 5px 0;
+  .third-page{
+    padding-left: 200px;
   }
-
-  .intro {
-    text-align: center;
-    padding-bottom: 10px; /* Add a large bottom padding to create a gap */
-    padding-top: 300px;
-    color: #212429;
-  }
-
-  .text-align{
-    letter-spacing: 2px;
-  }
-
-  h1.textstandard {
-    text-align: center;
-    font-size: 4em; /* Make the h1 big */
-  }
-
-  /* Styling for Sectors */
-  .sectors {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px; /* Adjust the gap between blocks */
-    margin-top: 80px; /* Add space between the intro and sectors */
-  }
-
-  .sector-block {
-    height: 520px; /* Set a fixed height for a more banner-like appearance */
-    width: 25%; /* Adjusted width for the sector blocks */
-    background-color: darkgrey;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 20px;
-    border-radius: 0; /* Remove border-radius for straight edges */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  }
-
-  #sector1.sector-block:hover {
-    transform: translateY(-10px);  /* Apply a slight translation upwards on hover */
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px blueviolet; /* Add a shadow on hover */
-    background-color: blueviolet; /* Change the background color on hover */
-  }
-
-  #sector2.sector-block:hover {
-    transform: translateY(-10px);  /* Apply a slight translation upwards on hover */
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px orangered; /* Add a shadow on hover */
-    background-color: orangered; /* Change the background color on hover */
-  }
-
-  #sector3.sector-block:hover {
-    transform: translateY(-10px);  /* Apply a slight translation upwards on hover */
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px darkgreen; /* Add a shadow on hover */
-    background-color: darkgreen; /* Change the background color on hover */
-  }
-
-
-
-  .sector-block:nth-child(1),
-  .sector-block:nth-child(3) {
-    margin: 0 100px; /* Reduce the margin for the outer blocks */
-  }
-
-  .sector-block img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .sector-block-text {
-    margin-top: 10%; /* Adjust the space between image and text */
-    font-size: small;
-    font-family: Modernism Narrow;
-  }
-
-  .sector-block:nth-child(3) { 
-    background: url('https://images.unsplash.com/photo-1615421533158-f6c874badff4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
-    background-size: cover;
-  }
-
-  .sector-block:nth-child(2) {
-    background: url('https://images.unsplash.com/photo-1615150044410-3d9bb804959e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
-    background-size: cover;
-  }
-
-  .sector-block:nth-child(1) {
-    background: url('https://images.unsplash.com/photo-1616067086625-f57bd026fbd1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
-    background-size: cover;
-  }
-
-  h3.textstandard {
-    text-align: center;
-    margin-top: 200px; /* Add more space between sectors and other content */
-    color: rgb(255, 255, 255);
-  }
-
-  .container{
-    background-color:#212429;
-    line-height: 80px;
-    height: 850px;
-    margin-top: 0px;
-  }
-
-   .para-spacing-intro{
-    font-family: Modern Sans Light;
-    color: white;
-    letter-spacing: 1px;
-    line-height: normal;
-    margin-top: 5px;
-    text-align: center;
-   }
-
-   .information-tab{
-    background-color: #212429;
-    color: white;
-    margin-top: 80px;
-    letter-spacing: 2px;
-    text-align: center;
-    line-height: 2px;
-    font-family: Modern Sans Light;
-    font-size: 20px;
-   }
-
-   .page-container {
-    position: relative;
-    height: 93vh;
 }
 
-.img-container {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    align-items: center;
-    height: 120px; /* Adjust the height as needed */
-}
-
-.img-container img {
-    width: 20px; /* Adjust the width as needed */
-    height: 100%; /* Maintain the aspect ratio */
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-.hover-effect {
-  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
-}
-
-.hover-effect:hover {
-  transform: translateY(5px); /* Adjust the distance the element raises up */
-}
-
-/* Media query for monitors */
-@media (min-width: 1800px){
-  body {
-    font-family: "Modern Age";
-    letter-spacing: 10px;
-    padding: 0;
-    margin: 0; /* Remove default margin */  
-    width: 100%;
-    height: 100px;
-    background: c0c0c0;
+@media screen and (max-width: 600px) {
+  .finance{
+    font-size: 10px;
   }
+  .machine{
+    font-size: 30px;
+  }
+  .description1{
+    font-size: 15px;
+  }
+}
 
+
+
+
+
+
+
+
+.fourth-page .background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/static/images/finalpage.jpg'); /* Adjust the path as needed */
+  background-size: 2106px 1000px;
+  background-repeat: no-repeat;
+  filter: brightness(25%);
+  z-index: -1;
+  }
   
-  .textstandard {
-    margin: 5px 0;
+  .fourth-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 165px;
+  align-items: left; /* Center text vertically */
+  justify-content: center;
   }
 
-  .intro {
-    text-align: center;
-    padding-bottom: 220px; /* Add a large bottom padding to create a gap */
-    padding-top: 370px;
-  }
+.motive {
+color: #FFF;
+text-shadow: 0 0 7px #FFF;
+font-family: "Modern Age";
+font-style: normal;
+font-size: 70px;
+font-weight: 400;
+line-height: normal;
+margin: 0; /* Remove default margin */
+}
 
-  h1.textstandard {
-    text-align: center;
-    font-size: 4em; /* Make the h1 big */
-  }
-
-  .top-container{
-    height: 760px;
-  }
-
-  .container{
-    background-color:#212429;
-    line-height: 80px;
-    height: 950px;
-    margin-top: 200px;
-  }
-
-  .sector-block {
-    height: 600px; /* Set a fixed height for a more banner-like appearance */
-    width: 23%; /* Adjusted width for the sector blocks */
-    background-color: darkgrey;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 20px;
-    border-radius: 0; /* Remove border-radius for straight edges */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+@media screen and (max-width: 1000px) {
+  .motive{
+    font-size: 50px;
   }
 }
 
-@media screen and (max-width: 950px) {
-  .sector-block {
-    margin: 0 3px; /* Adjust the margin for larger screens */
+@media screen and (max-width: 600px) {
+  .motive{
+    font-size: 30px;
   }
-
-  .sector-block:nth-child(1),
-  .sector-block:nth-child(3) {
-    margin: 0 50px; /* Reduce the margin for the outer blocks */
-  }
-
-  .sector-block-text {
-    margin-top: 10%; /* Adjust the margin for larger screens */
+  .description1{
+    font-size: 15px;
   }
 }
+
+
