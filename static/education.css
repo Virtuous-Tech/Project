@@ -18,34 +18,150 @@
     src: url(fonts/Modern\ Age.ttf) format('truetype');
   }
 
-.coming-soon{
-  font-family: Modernism Narrow;
-  letter-spacing: 2px;
-  font-weight: bolder;
-  color: blueviolet;
-  text-align: center;
-  margin-top: 200px;
-  font-size: 25px;
-}
-
-.title{
-  font-family: Modern Age;
-  margin-top: 50px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 40px;
-  letter-spacing: 4px;
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-.title a:visited {
-  color: inherit;
-}
-
-/* Media query for monitors */
-@media (min-width: 1800px){
-  .coming-soon{
-    margin-top: 300px;
+  body, html {
+    margin: 0;
+    padding: 0;
   }
-}
+  
+  .section {
+    display: flex;
+  }
+  
+  #section1 {
+    background-image: url('/static/images/education.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    filter: brightness(0.8);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #section2 {
+    background-image: url('/static/images/python.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    filter: brightness(0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right; /* Align text to the right horizontally */
+    padding-right: 168px;
+  }
+  
+  #section3 {
+    background-image: url('/static/images/styling.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    filter: brightness(0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right; /* Align text to the right horizontally */
+    padding-right: 168px;
+  }
+  
+  #section4 {
+    background-image: url('/static/images/deep.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    filter: brightness(0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right; /* Align text to the right horizontally */
+    padding-right: 168px;
+  }
+
+  h1{
+    font-family: Modern Age;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 1px;
+  }
+
+  #education{
+    font-size: 64px;
+    text-decoration: none;
+    color: white;
+    font-family: Modern Age;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  #python {
+    font-size: 90px;
+  }
+
+  #styling{
+    font-size: 90px;
+  }
+
+  #deep{
+    font-size: 90px;
+  }
+
+
+  h2{
+    font-family: modern sans light;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 1px;
+  }
+  
+  .hover-up {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-up:hover {
+    transform: translateY(-10px);
+  }
+
+  #python:hover{
+    color: rgb(144, 169, 240);
+  }
+
+  #styling:hover{
+    color:rgb(109, 116, 216);
+  }
+
+  #deep:hover{
+    color: rgb(188, 141, 196);
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    h2{
+      font-size: 10px;
+    }
+
+    #education{
+      font-size: 40px;
+    }
+  
+    #python {
+      font-size: 50px;
+    }
+  
+    #styling{
+      font-size: 50px;
+    }
+  
+    #deep{
+      font-size: 50px;
+    }
+  }
