@@ -165,3 +165,41 @@
       font-size: 50px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    #section2 {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      flex-direction: column; 
+      padding-right: 0;
+    }
+    
+    #section3 {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+      padding-right: 0;
+    }
+    
+    #section4 {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;      
+      padding-right: 0;
+    }
+
+    #python {
+      font-size: 30px;
+    }
+  
+    #styling{
+      font-size: 30px;
+    }
+  
+    #deep{
+      font-size: 30px;
+    }
+  }

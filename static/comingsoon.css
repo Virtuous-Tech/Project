@@ -22,8 +22,6 @@
         font-family: Modern Age;
         margin-top: 50px;
         text-align: center;
-        position: relative;
-      z-index: 2; /* Set a higher z-index for the header and makes sure that this element appears over the vh of the other div*/
         cursor: pointer;
         font-size: 40px;
         letter-spacing: 4px;
@@ -73,7 +71,7 @@
     }
 
     .highlight{
-      color: whitesmoke;(0, 0, 0); /* Set the desired color for the highlighted word */
+      color: whitesmoke; /* Set the desired color for the highlighted word */
     }
 
     .glowing-text{
@@ -95,4 +93,34 @@
 
     .glowing-text-finance {
       text-shadow: 0 0 1px rgba(255, 69, 0, 0.6);
+    }
+
+    @media screen and (max-width: 600px) {
+      .title{
+        font-size: 30px;
+        margin-top: 30px;
+      }
+
+      .subheadings-link{
+        font-size: 20px;
+      }
+
+      .h2{
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .title{
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .subheadings-link{
+        font-size: 20px;
+      }
+
+      .h2{
+        font-size: 10px;
+      }
     }
