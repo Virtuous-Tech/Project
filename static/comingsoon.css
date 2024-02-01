@@ -18,16 +18,18 @@
     src: url(fonts/Modern\ Age.ttf) format('truetype');
   }
 
-    .title{
-        font-family: Modern Age;
-        margin-top: 50px;
-        text-align: center;
-        cursor: pointer;
-        font-size: 40px;
-        letter-spacing: 4px;
-        text-decoration: none;
-        color: whitesmoke;
-    }
+  .title{
+    font-family: Modern Age;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Set a higher z-index for the header and makes sure that this element appears over the vh of the other div*/
+    cursor: pointer;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: whitesmoke;
+}
 
     .title a:visited {
       color: inherit;
